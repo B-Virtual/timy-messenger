@@ -43,7 +43,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "de.janoodle.circlesApp"
+        applicationId "com.bvirtual.messenger"
         minSdkVersion 21 // avoid max 64k method limit
         targetSdkVersion 29
 

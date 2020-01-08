@@ -89,7 +89,7 @@ Next, you’ll need to configure your firebase app for Flutter as described in [
 
 **iOS**
 
-- Enter iOS-Bundle-ID: `de.janoodle.circlesApp.debug`
+- Enter iOS-Bundle-ID: `com.bvirtual.messenger.debug`
 - Download and rename `GoogleService-Info.plist` to  `GoogleService-Info-Dev.plist`.
 - Copy file to `ios/Runner/Firebase`.
 
