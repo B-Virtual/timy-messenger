@@ -64,6 +64,19 @@ The backend is build using Firebase’s `node.js` SDK. All files are provided in
 
 *Note: The following steps assume you’re using Firebases’ free `Spark Plan`. Therefore we’re performing the configuration manually.*
 
+## Create a docker image to host the firebase tools
+
+....
+FROM node:8.16-alpine
+
+EXPOSE 9005
+
+RUN npm install -g firebase-tools
+....
+
+docker build -t bvirtual/firebase-docker-tools .
+docker run -v ${PWD}:/usr/app -w /usr/app -p 9005:9005 -u node -it bvirtual/firebase-docker-tools sh
+
 ### B1. Setup sign-in method & adding users
 
 An initial sign-in method needs to be configured.
